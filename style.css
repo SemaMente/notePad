@@ -1,0 +1,49 @@
+body {
+  /*Selects the background as a image, enters the url and the desired image link */
+  background-image: url(https://i.pinimg.com/564x/bb/ee/33/bbee33881febb0f7b524a083ea215739.jpg);
+}
+.titleSection {
+  color: rgb(83, 25, 80);
+  text-align: center;
+  /* adds spaces between letters*/
+  letter-spacing: 5px;
+  /* adds shadows behind the text*/
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+textarea {
+  /* textarea background color*/
+  background-color: rgba(224, 175, 202, 0.39);
+}
+.tableSection {
+  border: 3px dotted palevioletred;
+  border-collapse: collapse;
+  margin-bottom: 150px;
+}
+th {
+  border: 3px solid pink;
+  padding: 3px;
+  text-align: center;
+  background-color: beige;
+}
+td {
+  background-color: rgb(240, 202, 214);
+  /*With dotted, the borders are drawn as dots*/
+  border: 1px dotted palevioletred;
+  border-collapse: collapse;
+  width: 1500px;
+  height: 20px;
+  /*Changes the font style*/
+  font-family: "Sofia", sans-serif;
+
+  text-align: justify;
+  /*adds space per line*/
+  text-indent: 20px;
+}
+.googleSection {
+  text-align: right;
+}
+
+.formTagsSection {
+  text-align: left;
+  margin: auto;
+}

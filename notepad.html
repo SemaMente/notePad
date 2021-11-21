@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notepad</title>
+    <!--import css file-->
+    <link rel="stylesheet" href="style.css" />
+    <!--import the font style-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <!--import js file-->
+    <script src="notepad.js"></script>
+  </head>
+  <body>
+    <div class="titleSection">
+      <h1>NotePad</h1>
+      <h3>Online Note Taking</h3>
+    </div>
+    <div class="googleSection">
+      <!--When the user search something system will search with google-->
+      <form action="https://www.google.com/search">
+        <label> Search : </label>
+        <input
+          placeholder="search with Google"
+          type="text"
+          name="q"
+          id="searchInput"
+        />
+        <button class="button1" id="submitButton" onclick="">Submit</button>
+      </form>
+    </div>
+    <br />
+    <div class="formTagsSection">
+      <form action="">
+        <label> My note: </label>
+        <br />
+        <!--Textarea for note taking-->
+        <textarea
+          name="note"
+          id="myTextarea"
+          cols="173"
+          rows="20"
+          placeholder="Take your notes..."
+        ></textarea>
+        <br />
+        <!--Delete all typed text, resets tektarea-->
+        <input type="reset" value="Reset" />
+        <h3>Weeks</h3>
+        <!--Checkbox-->
+        <input type="checkbox" id="week1" name="week1" value="Week 1" />
+        <label for="week1"> Week 1</label> <br />
+        <input type="checkbox" id="week2" name="week2" value="Week 2" />
+        <label for="week2"> Week 2</label> <br />
+        <input type="checkbox" id="week3" name="week3" value="Week 3" />
+        <label for="week3"> Week 3</label> <br />
+        <br />
+      </form>
+      <!--With onClick part js function codes work in this div-->
+      <input type="submit" value="Submit" onclick="function1()" />
+      <br />
+      <!--<button id="submitButton"  onclick="" >Submit!</button>-->
+    </div>
+    <br />
+    <div class="tableSection"> 
+      <table class="w1Table">
+        <tr id="week1">
+          <th>Week 1:</th>
+        </tr>
+        <tr>
+          <td id="w1"></td>
+        </tr>
+      </table>
+      <table class="w2Table">
+        <tr id="week2">
+          <th>Week 2:</th>
+        </tr>
+        <tr>
+          <td id="w2"></td>
+        </tr>
+      </table>
+      <table class="w3Table">
+        <tr id="week3">
+          <th>Week 3:</th>
+        </tr>
+        <tr>
+          <td id="w3"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
